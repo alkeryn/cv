@@ -1,11 +1,13 @@
 %
-% Simple asymmetric two-column CV 
+% Simple asymmetric two-column CV
 % Author: Sofia JIJON
 %
 
 \documentclass[a4paper,10pt]{article}
 \usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
-\input{MySetup}
+\input{lib}
+% \usepackage{titlesec}
+
 %-------------------------------------------------------------------------------------------------------
 
 \begin{document}
@@ -37,22 +39,23 @@ J'aime mon petit coeur <3\\
 
 \MySkip 	% See MySetup.tex file
 
-\textcolor{ColorTwo}{\faEnvelopeO} 
+\textcolor{ColorTwo}{\faEnvelopeO}
 \myhref{mailto:plbraundev@gmail.com}{plbraundev@gmail.com} \\
 
-\textcolor{ColorTwo}{\faChain} 
+\textcolor{ColorTwo}{\faChain}
 \myhref{https://your-web-page.io}{https://your-web-page.io}
 \end{center}
 
 \vfill
 
 %----------------------------------------------------
-\section*{Scientific interests}
+\section*{Personal Interests}
 \raggedright
-\textcolor{ColorOne}{$\circ$} Something interesting\\
-\textcolor{ColorOne}{$\circ$} Another interesting thing\\
-\textcolor{ColorOne}{$\circ$} The most interesting thing\\
-\textcolor{ColorOne}{$\circ$} Something less interesting
+\textcolor{ColorOne}{$\circ$} Computers\\
+\textcolor{ColorOne}{$\circ$} Painting\\
+\textcolor{ColorOne}{$\circ$} Hiking\\
+\textcolor{ColorOne}{$\circ$} Hacking\\
+\textcolor{ColorOne}{$\circ$} cooking\\
 
 \vfill
 
@@ -60,19 +63,16 @@ J'aime mon petit coeur <3\\
 \section*{Education}
 	\begin{description}
 	\raggedright
-	\item [\normalfont \textcolor{ColorOne}{2021.}] \textbf{PhD in
-Social Sciences}\\
-	Another University\\
-	City -- COUNTRY
+    \item [\normalfont \textcolor{ColorOne}{2017 - 2020.}] \textbf{UHA 4.0}\\
+	Computer Science University\\
+	Mulhouse -- France
+    \item \textbf{Lycée Blaise Pascal Colmar}\\
+	Highschool\\
+	Colmar -- France
 
-	\item [\normalfont \textcolor{ColorOne}{2015.}] \textbf{Masters in
-	Physics}\\
-	University\\
-	City -- COUNTRY
-
-	\item [\normalfont \textcolor{ColorOne}{2013.}] \textbf{Bachelor in arts}\\ 
-	Arts school \\
-	City -- COUNTRY
+    \item \mbox{\textbf{Collège Jaques Prévert}}\\
+	Middle school \\
+	France
 \end{description}
 
 \vfill
@@ -100,30 +100,29 @@ Social Sciences}\\
 \section*{Current situation}
 \begin{description}
 \raggedright
-\item[\normalfont \textcolor{ColorOne}{Jan. 2018 -- Apr. 2021.}] \textbf{je mange des pommes de terres}\\ \medskip
+\item[\normalfont \textcolor{ColorOne}{Sept. 2021 -- Now.}] \textbf{Self employed}\\ \medskip
 
-A Nice Research Lab\\
+working at my own company on various projects.
 
-Here is a short description of your current project.
-
+\vspace{-0.9\baselineskip}
 \end{description}
 
 %----------------------------------------------------
 \section*{Experience}
 \begin{description}
 \raggedright
-\item[\normalfont \textcolor{ColorOne}{Sep. 2017 -- Aug. 2018.}] 
+\item[\normalfont \textcolor{ColorOne}{Sep. 2017 -- Aug. 2018.}]
 	\textbf{Your previous job}\\ \medskip
-	
+
 	Your previous employer\\
-	
-	Here you describe what you did before working where you are working now. 
-	
-\item[\normalfont \textcolor{ColorOne}{Sep. 2012 -- Aug. 2017.}] 
+
+	Here you describe what you did before working where you are working now.
+
+\item[\normalfont \textcolor{ColorOne}{Sep. 2012 -- Aug. 2017.}]
 	\textbf{Your first job}\\ \medskip
-	
+
 	Your employer\\
-	
+
 	This could be a nice short description of your first job.
 \end{description}
 
@@ -134,7 +133,7 @@ Here is a short description of your current project.
 	\item \underline{Name, Y.}, Second Author, N., Third Author, N. et al. \textbf{(2019)} A great title {\it Journal}. doi:~\myhref{https://doi.org/xx.yyy/zzz.12345}{xx.yyy/zzz.12345}
 
 	\item First Author, T., \underline{Name, Y.}, Third Author, N. et al. \textbf{(2015)} A long title for a great study{\it Journal}. doi:~\myhref{https://doi.org/xx.yyy/zzz.54321}{xx.yyy/zzz.54321}
-	
+
 \end{description}
 %----------------------------------------------------
 \section*{Oral communications}
