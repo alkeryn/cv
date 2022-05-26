@@ -4,7 +4,7 @@
 %
 
 \documentclass[a4paper,10pt]{article}
-\usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
+\usepackage[vmargin=1.2cm, hmargin=1.5cm]{geometry}
 \input{lib}
 % \usepackage{titlesec}
 
@@ -36,7 +36,7 @@
 Born on July 13th, 1998\\
 Mulhouse -- France\\
 Currently living in Another City\\
-J'aime mon petit coeur <3\\
+% J'aime mon petit coeur <3\\
 
 \MySkip 	% See MySetup.tex file
 
@@ -99,7 +99,7 @@ J'aime mon petit coeur <3\\
 %-------------------------------------------------------------------------------------------------------
 \begin{adjustbox}{valign=t}
 \begin{minipage}{0.6\textwidth} % Adapt width to your convienience
-\section*{Current situation}
+\section*{Current situation:}
 \begin{description}
 \raggedright
 \item[\normalfont \textcolor{ColorOne}{Sept. 2021 -- Now.}] \textbf{Self employed}\\ \medskip
@@ -110,7 +110,7 @@ Working at my own company on various projects.
 \end{description}
 
 %----------------------------------------------------
-\section*{Bio}
+\section*{Bio:}
 \begin{spacing}{1.0}
 
 \vspace{-0.6\baselineskip}
@@ -121,47 +121,54 @@ i haven't got much diplomas but i can show my skills.
 \end{spacing}
 \vspace{-0.8\baselineskip}
 %----------------------------------------------------
-\section*{Skills}
+\section*{Skills:}
 \begin{description}
-\begin{spacing}{1.0}
+\begin{spacing}{0.95}
 \item{\textbf{Languages:}}
 
     C | C++20 | ASM x86 \& ARM | Python | Rust \\
-    HTML5, css, Javascript | NodeJs | PHP | Go | Rust\\
-    Bash | ZSH | Vim, Vimscript | Make | Awk\\
-    Ruby | Java | Kotlin | Dart | Haskell | Lisp | Ada, Ada Sparks\\
-    Julia | R \\
+    Bash | ZSH | Vim, Vimscript | Make | Cmake | Awk\\
+    HTML5, css, Javascript | NodeJs | PHP | Go\\
+    Ruby | Java | Kotlin | Dart\\
+    Haskell | Lisp | Lua | Ada, Ada Sparks | Zig | Wasm\\
+    Julia | R | Cobol | Fortran \\
     Markdown | \LaTeX | XML | YAML | JSON
 
 \item{\textbf{Tools / Software:}}
-    GNU coreutils, gdb, radare2, ida pro, sed, nmap\\
+
+    GNU coreutils, gdb, radare2, ghidra, ida pro, frida, sed, nmap\\
     metasploit framework, bettercap, netcat, netstat, ip, ss\\
-    \{s,m,l\}trace, objdump, xxd, ld, ldd, {[..]}
+    \{s,m,l\}trace, objdump, xxd, ld, ldd, wireshark, tshark, tcpdump {[..]}
 
 \item{\textbf{Sysadmin skills:}}
 
     Linux, Unix | KVM | Qemu | Libvirt | Docker | LXC, LXD\\
+    Nix | Kubernetes | ZFS | Btrfs\\
     Regex, globs \& wildcards\\
     Systemd | systemd-nspawn | machinectl
 
 \item{\textbf{Technology:}}
 
-    Git | SQL | UML | Ajax | Arduino\\
-    Jira | Confluence\\
-    graphviz\\
-    Networking (OSI model)
+    Git | UML | Graphviz | Ajax | Arduino | Jira | Confluence\\
+    SQL: mysql, postgres | NoSQL: mongodb, redis, scylladb\\
+    NewSQL: cockroachDB | Nginx
 
 \item{\textbf{Libraries:}}
 
-    SDL2 , SFML, Ncurses, Tk, Gtk, libssh\\
-    socket, STD \& STL algorithm{[...]}
+    SDL2 , SFML, OpenGL, Vulkan\\
+    Ncurses, QT, GTK, Tk, XCB\\
+    Opencl, Sycl, Hip, OpenACC/OpenMP, Cuda\\
+    socket, libssh, libsodium, STD \& STL algorithm{[...]}
 
 \item{\textbf{Misc:}}
 
     Cybersecurity, Reverse engineering, Binary exploitation\\
-    forensic analysis
+    Forensic analysis, Cryptanalysis, Data Oriented Programming\\
+    AI, Machine learning and expert systems.\\
+    Android JDK, Android NDK | Computer Architecture\\
+    Arch Linux, Gentoo, LFS(linux from scratch), NixOS, debian*
 
-\vspace{-1.5\baselineskip}
+\vspace{-2.2\baselineskip}
 \end{spacing}
 \end{description}
 
@@ -187,9 +194,10 @@ i haven't got much diplomas but i can show my skills.
 \section*{Achievements}
 \begin{spacing}{1.0}
     \raggedright
-    Currently in the top 50 of the DGSE 404CTF \textbf{(Now)}\\
-    One of the winners of the DGSE Richelieu CTF \textbf{(2019)}
+    Currently in the top 50 of the DGSE hacking 404CTF \textbf{(Now)}\\
+    One of the winners of the DGSE Richelieu hacking CTF \textbf{(2019)}
 \end{spacing}
+\vspace{-1.0mm}
 %----------------------------------------------------
 % \section*{Oral communications}
 % \begin{description}
@@ -210,8 +218,8 @@ i haven't got much diplomas but i can show my skills.
 
 \section*{Languages}
 \begin{tabular}{ll}
-	French 		& \SkillBull{$\bullet \bullet \bullet \bullet \bullet$}\\
-	English 		& \SkillBull{$\bullet \bullet \bullet \bullet \bullet$}\\
+    French & \cvskill[0.3]{1}
+    English & \cvskill[0.3]{0.95}
 \end{tabular}
 
 \vfill\null \columnbreak  % Break column for new section
@@ -224,6 +232,8 @@ Listening to music
 \vfill\null  % Break column for new section
 
 \end{multicols}
+\vspace{-1\baselineskip}
+
 % \begin{spacing}{0.8}
 %     \begin{tabular}{ll}
 % 	Rust & \cvskill {1.0}\\
@@ -233,6 +243,11 @@ Listening to music
 % \end{spacing}
 %----------------------------------------------------
 \LastUpdate
+
+\vfill
+\begin{flushright}
+    This resume was made using \LaTeX
+\end{flushright}
 %----------------------------------------------------
 \end{minipage}
 \end{adjustbox}
