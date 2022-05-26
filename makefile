@@ -1,4 +1,4 @@
-CC=pdflatex
+CC=xelatex
 NAME=cv
 OUT=out
 $(NAME): $(NAME).tex

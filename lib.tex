@@ -2,7 +2,7 @@
 %-------------------------------------------------------------------------------------------------------
 % Packages
 %-------------------------------------------------------------------------------------------------------
-\usepackage[latin1]{inputenc}
+% \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{fontawesome}
@@ -23,15 +23,17 @@
 %-------------------------------------------------------------------------------------------------------
 \pagenumbering{gobble}
 \renewcommand{\baselinestretch}{1.5}
-\setlength{\parindent}{0pt}
-\inputencoding{utf8}
+% \inputencoding{utf8}
+\setmainfont{Liberation Serif}
+% \setmainfont{DejaVu Sans}
 
 %
 % Color theme
 %
-\definecolor{ColorOne}{RGB}{255,0,0} 	% Blue
+\definecolor{ColorOne}{RGB}{115,19,13} 	% Blue
 \definecolor{ColorTwo}{RGB}{120,0,120} 	% Mauve
 \definecolor{Cyan}{RGB}{0,255,255} 	% Mauve
+\definecolor{mycyan}{RGB}{0,255,255} 	% Mauve
 \definecolor{Purple}{RGB}{255,0,255} 	% Mauve
 %\definecolor{ColorTwo}{RGB}{140,100,0} 	% Gold
 
@@ -73,3 +75,20 @@
 \newcommand{\SkillBull}[1]{%
 \textcolor{ColorTwo}{#1}
 }
+
+\newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
+\definecolor{maincol}{RGB}{ 45, 50, 90 }
+\definecolor{lightcol}{RGB}{245,245,245}
+\definecolor{Orange}{RGB}{250,76,67}
+
+\newcommand{\cvskill}[2][0.85] {
+    \newcommand{\height}{0.20}
+    \hspace{-2.7mm}
+	\begin{tikzpicture}
+	    \draw[rounded corners=0.2mm][preaction={draw, line width=0.6mm, black}][clip] (0,0) rectangle (#1\mpwidth, \height);
+	    \fill [lightcol] (0,0) rectangle (#1\mpwidth, \height);
+	    \fill [Orange] (0,0) rectangle (#2*#1\mpwidth, \height);
+		% \clip[postaction={fill=mycyan, draw=black, line width=0.5mm}] (0,0) rectangle +(#1\mpwidth,0.15);
+	\end{tikzpicture}\\%
+}
+
