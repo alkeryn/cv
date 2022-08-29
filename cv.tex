@@ -255,4 +255,48 @@ Learning | Reading | Sport | Skateboarding
 %----------------------------------------------------
 \end{minipage}
 \end{adjustbox}
+\newpage
+\section*{Projects:}
+\begin{spacing}{1}
+	\subsection*{\textcolor{purple}{Virtablet app:}}
+	Virtablet was an app that allowed you to use any android tablet with the required hardware like a cintiq graphic tablet (including video transfer and multitouch) on windows and Linux computers
+	(mac and ipad support would be added later);\\
+
+	To do so, a kotlin android app was made, it registered the events (position, pressure, tilt, orientation, multitouch) then sent them over the network using a custom protocol over tcp and udp.
+	on the computer side i had to write a server to receive and inject the event, the server was written in C++ and the networking was done with tcp and udp sockets, i used \#ifdefs for linux and windows compatibility as i made my own networking library.
+	then once the packets were received and the events parsed from my custom format, i had to inject them; since windows doesn't have any syscalls for input injection, i had to develop a driver using
+	\textbf{KMDF} so that i'd be able to create a "virtual graphic tablet" to which i'd send pen and multitouch events.\\
+
+	on Linux on the other hand, i didn't need to write a driver and could just use \textbf{libinput}, basically allowing you to create virtual devices with ioctls where you define what kind of device it is and its varius parameters, and then sending the events to that device.
+	\\
+	\\
+	Network discovery was made using udp broadcast.\\
+
+	Only the video transfer part was left to do, but unfortunately someone made the same software and released it only a few weeks before my planned release date, i contacted the developper behind it
+	and like me he was an independant, however he started working on the project two years earlier.
+
+	\noindent as the app lost most commercial viability, i never finished the project and moved on to something else.
+
+	\begin{figure}[h!]
+		\noindent\makebox[\textwidth]{\includegraphics[width=1\paperwidth]{vtb/krita-virtablet.png}}
+		\caption{Strokes made in the krita software running on the computer using a galaxy tab s4 running my app and sending the events to the server running on the computer which in turn, injects said events\\
+		as you can see, pressure sensitivity and tilt is working.
+		the canvas was also rotated using multitouch which was also sent from the tablet and injected by the computer server.
+		}
+	\end{figure}
+
+
+\subsection*{\textcolor{purple}{Dating app:}}
+	I made a dating app for a niche i won't specify, the backend was made in \textbf{Rust} and the database i used was scylladb and redis.
+the front was made in react, however i never finished that project as my personal financial situation no longer allowed me to finish it and my new priority was to find a reliable
+source of income.\\
+\\
+which bring us to today.
+
+i had many more side projects including writing a spiking neural network with dynamic topology (neurons can be created / removed whilst the network is running) library from scratch
+but i only put here what i think are the two most relevant.\\
+\\
+PS: i hope you'll excuse my grammar as it is definitely not the thing i'm the best at.
+
+\end{spacing}
 \end{document}
