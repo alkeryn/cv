@@ -33,15 +33,18 @@
 
 \MySkip 	% See MySetup.tex file
 
+\begin{spacing}{1.0}
 Born on July 13th, 1998\\
 Mulhouse -- France\\
 Currently living in Another City\\
+\end{spacing}
 % J'aime mon petit coeur <3\\
 
 \MySkip 	% See MySetup.tex file
 
 \textcolor{ColorTwo}{\faEnvelopeO}
 \myhref{mailto:plbraundev@gmail.com}{plbraundev@gmail.com} \\
+\vspace{-1\baselineskip}
 
 % \textcolor{ColorTwo}{\faChain}
 % \myhref{https://alkeryn.com}{https://alkeryn.com}
@@ -61,21 +64,37 @@ Currently living in Another City\\
 \end{spacing}
 
 \vfill
-
+%----------------------------------------------------
+\section*{Work Experience}
+\begin{description}
+		\begin{spacing}{1.0}
+		\item [\normalfont \textcolor{ColorOne}{10/2022 - NOW.}] \textbf{Everdreamsoft}\\
+			Working as a Full Stack developer for Everdreamsoft\\
+			Geneva -- Switzerland
+		\item [\normalfont \textcolor{ColorOne}{9/2021 - NOW.}] \textbf{Self Employed}\\
+			Working at my own company\\
+			Mulhouse -- France
+		\item [\normalfont \textcolor{ColorOne}{07/2022 - 10/2022.}] \textbf{Sogeti}\\
+			Working as a cybersecurity consultant for the PSA Finance bank
+			as a service provider for Sogeti\\
+			Meroux -- France
+		\end{spacing}
+\end{description}
+\vspace{-2\baselineskip}
 %----------------------------------------------------
 \section*{Education}
-	\begin{description}
-	\raggedright
-    \item [\normalfont \textcolor{ColorOne}{2017 - 2020.}] \textbf{UHA 4.0}\\
-	Computer Science University\\
-	Mulhouse -- France
-    \item \textbf{Lycée Blaise Pascal Colmar}\\
-	Highschool\\
-	Colmar -- France
+\begin{description}
+		\raggedright
+	\item [\normalfont \textcolor{ColorOne}{2017 - 2020.}] \textbf{UHA 4.0}\\
+		Computer Science University\\
+		Mulhouse -- France
+	\item \textbf{Lycée Blaise Pascal Colmar}\\
+		Highschool\\
+		Colmar -- France
 
-    \item \mbox{\textbf{Collège Jaques Prévert}}\\
-	Middle school \\
-	France
+	\item \mbox{\textbf{Collège Jaques Prévert}}\\
+		Middle school \\
+		France
 \end{description}
 
 \vfill
@@ -103,9 +122,9 @@ Currently living in Another City\\
 \section*{Current situation:}
 \begin{description}
 \raggedright
-\item[\normalfont \textcolor{ColorOne}{Sept. 2021 -- Now.}] \textbf{Self employed}\\ \medskip
+\item[\normalfont \textcolor{ColorOne}{Oct. 2022 -- Now.}] \textbf{Everdreamsoft}\\ \medskip
 
-Working at my own company on various projects.
+Working as a fullstack developer for Everdreamsoft.
 
 \vspace{-0.9\baselineskip}
 \end{description}
@@ -116,9 +135,9 @@ Working at my own company on various projects.
 
 \vspace{-0.6\baselineskip}
 
-\hspace{5mm} I'm a computer hobbyist since the age of 9, i've been learning computer science,
+\hspace{5mm} I'm a computer hobbyist since the age of 9, I've been learning computer science,
 programming languages and various technologies since.\\
-i don't have many diplomas but i can show my skills.
+I don't have many diplomas but i can show my skills.
 \end{spacing}
 \vspace{-0.8\baselineskip}
 %----------------------------------------------------
@@ -195,7 +214,6 @@ i don't have many diplomas but i can show my skills.
 \section*{Achievements}
 \begin{spacing}{1.0}
     \raggedright
-    Currently in the top 50 of the DGSE hacking 404CTF \textbf{(Now)}\\
     One of the winners of the DGSE Richelieu hacking CTF \textbf{(2019)}
 \end{spacing}
 \vspace{-1.0mm}
@@ -256,14 +274,14 @@ Learning | Reading | Sport | Skateboarding
 \end{minipage}
 \end{adjustbox}
 \newpage
-\section*{Projects:}
+\section*{Personal projects:}
 \begin{spacing}{1}
 	\subsection*{\textcolor{purple}{Virtablet app:}}
 	Virtablet was an app that allowed you to use any android tablet with the required hardware like a cintiq graphic tablet (including video transfer and multitouch) on windows and Linux computers
 	(mac and ipad support would be added later);\\
 
 	To do so, a kotlin android app was made, it registered the events (position, pressure, tilt, orientation, multitouch) then sent them over the network using a custom protocol over tcp and udp.
-	on the computer side i had to write a server to receive and inject the event, the server was written in C++ and the networking was done with tcp and udp sockets, i used \#ifdefs for linux and windows compatibility as i made my own networking library.
+	on the computer side i had to write a server to receive and inject the event, the server was initially written in C++ and the networking was done with tcp and udp sockets, i used \#ifdefs for linux and windows compatibility as i made my own networking library, however i later rewrote the whole thing in \textbf{Rust}.
 	then once the packets were received and the events parsed from my custom format, i had to inject them; since windows doesn't have any syscalls for input injection, i had to develop a driver using
 	\textbf{KMDF} so that i'd be able to create a "virtual graphic tablet" to which i'd send pen and multitouch events.\\
 
@@ -286,12 +304,12 @@ Learning | Reading | Sport | Skateboarding
 	\end{figure}
 
 
-\subsection*{\textcolor{purple}{Dating app:}}
-	I made a dating app for a niche i won't specify, the backend was made in \textbf{Rust} and the database i used was scylladb and redis.
-the front was made in react, however i never finished that project as my personal financial situation no longer allowed me to finish it and my new priority was to find a reliable
-source of income.\\
-\\
-which bring us to today.
+\subsection*{\textcolor{purple}{Backend Framework:}}
+	I'm working on a backend framework which would allow me to create apps rather quickly, the backend was made in \textbf{Rust} using Actix web and the databases i'm using are scylladb, redis and postgres.
+features include authentification module, localisation module based on S2 cells and many more.
+the databases used are dependent on compilation flags.
+the approach is modular and allow to use and connect individual features in any new project.
+I plan on using that framework to build various apps.
 
 i had many more side projects including writing a spiking neural network with dynamic topology (neurons can be created / removed whilst the network is running) library from scratch
 but i only put here what i think are the two most relevant.\\
