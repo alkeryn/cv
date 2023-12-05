@@ -140,7 +140,7 @@ Currently living in Delémont Switzerland\\
 
 \hspace{5mm} I'm a computer hobbyist since the age of 9, I've been learning computer science,
 programming languages and various technologies since.\\
-I don't have many diplomas but i can show my skills.
+I don't have many diplomas but I can show my skills.
 \end{spacing}
 \vspace{-0.8\baselineskip}
 %----------------------------------------------------
@@ -296,19 +296,19 @@ Learning | Reading | Sport | Skateboarding
 	(mac and ipad support would be added later);\\
 
 	To do so, a kotlin android app was made, it registered the events (position, pressure, tilt, orientation, multitouch) then sent them over the network using a custom protocol over tcp and udp.
-	on the computer side i had to write a server to receive and inject the event, the server was initially written in C++ and the networking was done with tcp and udp sockets, i used \#ifdefs for linux and windows compatibility as i made my own networking library, however i later rewrote the whole thing in \textbf{Rust}.
-	then once the packets were received and the events parsed from my custom format, i had to inject them; since windows doesn't have any syscalls for input injection, i had to develop a driver using
+	on the computer side I had to write a server to receive and inject the event, the server was initially written in C++ and the networking was done with tcp and udp sockets, I used \#ifdefs for linux and windows compatibility as I made my own networking library, however I later rewrote the whole thing in \textbf{Rust}.
+	then once the packets were received and the events parsed from my custom format, I had to inject them; since windows doesn't have any syscalls for input injection, I had to develop a driver using
 	\textbf{KMDF} so that i'd be able to create a "virtual graphic tablet" to which i'd send pen and multitouch events.\\
 
-	on Linux on the other hand, i didn't need to write a driver and could just use \textbf{libinput}, basically allowing you to create virtual devices with ioctls where you define what kind of device it is and its varius parameters, and then sending the events to that device.
+	on Linux on the other hand, I didn't need to write a driver and could just use \textbf{libinput}, basically allowing you to create virtual devices with ioctls where you define what kind of device it is and its varius parameters, and then sending the events to that device.
 	\\
 	\\
 	Network discovery was made using udp broadcast.\\
 
-	Only the video transfer part was left to do, but unfortunately someone made the same software and released it only a few weeks before my planned release date, i contacted the developper behind it
+	Only the video transfer part was left to do, but unfortunately someone made the same software and released it only a few weeks before my planned release date, I contacted the developper behind it
 	and like me he was an independant, however he started working on the project two years earlier.
 
-	\noindent as the app lost most commercial viability, i never finished the project and moved on to something else.
+	\noindent as the app lost most commercial viability, I never finished the project and moved on to something else.
 
 	\begin{figure}[h!]
 		\noindent\makebox[\textwidth]{\includegraphics[width=1\paperwidth]{vtb/krita-virtablet.png}}
@@ -326,10 +326,10 @@ the databases used are dependent on compilation flags.
 the approach is modular and allow to use and connect individual features in any new project.
 I plan on using that framework to build various apps.
 
-i had many more side projects including writing a spiking neural network with dynamic topology (neurons can be created / removed whilst the network is running) library from scratch
-but i only put here what i think are the two most relevant.\\
+I had many more side projects including writing a spiking neural network with dynamic topology (neurons can be created / removed whilst the network is running) library from scratch
+but I only put here what I think are the two most relevant.\\
 \\
-PS: i hope you'll excuse my grammar as it is definitely not the thing i'm the best at.
+PS: I hope you'll excuse my grammar as it is definitely not the thing i'm the best at.
 
 \end{spacing}
 \end{document}
