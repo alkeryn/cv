@@ -44,7 +44,7 @@ Mulhouse, France\
         - *Rust*, *Python*, *Linux*, *Bash*, *C*, *C++*, *Nix*
         - KVM, QEMU, Proxmox, Libvirt, LXC, LXD, Docker, Kubernetes, Nix
         - PostgreSQL, MySQL, CockroachDB, ScyllaDB, Redis, SQLite, MongoDB
-        - nmap, scapy, ss, netcat, TCP/IP and UDP knowledge
+        - nmap, scapy, ss, ip, netcat, SSH, TCP/IP and UDP knowledge
         - Nginx, Apache, *JavaScript*, PHP, HTML5, CSS, WebAssembly
         - Reverse engineering, static & dynamic analysis, binary exploitation, writing exploits\
           Data-oriented programming/design, Machine learning, Arch Linux, NixOS, *Git*
@@ -71,7 +71,7 @@ Mulhouse, France\
     - Optimization and adding features to an in-house database
     - Wrote benchmarking tools for prototyping optimizations | *Rust*
     - Wrote a migration tool for blockchain data from *MongoDB* to *PostgreSQL* using *Rust*
-    - Lead developer for the backend of the ChainChronicles project, an NFT subscription service | *PHP*
+    - Lead backend developer for the ChainChronicles project, an NFT subscription service | *PHP*
     - Developed a *Go* microservice for account synchronization with Stripe's API
     - Contributed to the Wakweli blockchain MVP | *Go, PostgreSQL*
     - Developed an in-house secret sharing application using Shamir's Secret Sharing and AES-GCM | *Go, Wails, PostgreSQL*
@@ -109,5 +109,5 @@ French and English
 Available upon request
 = Personal Project:
 Game server scanner written in *Rust* that can scan and get metadata of\
-> 200k servers in < 10s across the whole IPV4 range.
+> 200k servers in < 10s across the whole IPv4 range.
 ]
