@@ -52,6 +52,12 @@ Mulhouse, France\
 
 = Work Experience:
 
+#work("Hut8", "Senior Software Engineer", "January 2024 - Now")[
+    - Writing software to orchestrate hundred of thousands of computers in *Rust*
+    - Writing software to curtail computers based on power price and other factors.
+    - On-call Response to emergencies.
+]
+
 #work("Vozforge", "Founder and Software Engineer", "May 2020 - Now")[
     - Wrote an app that allows using an Android tablet as a graphic tablet on Windows and Linux,
         this involved writing drivers#cnt("w") and a custom TCP and UDP binary protocol from scratch.
@@ -78,14 +84,6 @@ Mulhouse, France\
     - Researched Ory Kratos authentication service
 ]
 
-#work("PSA Finance", "Cybersecurity Consultant and Manager / Executive", "July 2022 - October 2022")[
-    - Worked as a Cybersecurity Consultant and Manager for the *PSA Finance* group (the bank of *Peugeot* and *Citroën*) as a service provider from *Sogeti* (part of *Capgemini*)
-    - Conducted network vulnerability scans on thousands of servers in the local network using *Qualys*
-    - Performed penetration testing and analyzed third-party penetration test reports
-    - Wrote vulnerability reports and mitigation strategies based on the aforementioned penetration tests
-    - Developed a *Python* tool to match vulnerabilities from the NIST NVD vulnerability database
-]
-
 #v(0.5em)
 #columns(3)[
 = Education:
@@ -110,4 +108,19 @@ Available upon request
 = Personal Project:
 Game server scanner written in *Rust* that can scan and get metadata of\
 > 200k servers in < 10s across the whole IPv4 range.
+
+#v(1fr)
+#align(right)[see older work experiences on #link(<old>)[page 2]]
+]
+
+#pagebreak()
+
+= Older Work Experience: <old>
+
+#work("PSA Finance", "Cybersecurity Consultant and Manager / Executive", "July 2022 - October 2022")[
+    - Worked as a Cybersecurity Consultant and Manager for the *PSA Finance* group (the bank of *Peugeot* and *Citroën*) as a service provider from *Sogeti* (part of *Capgemini*)
+    - Conducted network vulnerability scans on thousands of servers in the local network using *Qualys*
+    - Performed penetration testing and analyzed third-party penetration test reports
+    - Wrote vulnerability reports and mitigation strategies based on the aforementioned penetration tests
+    - Developed a *Python* tool to match vulnerabilities from the NIST NVD vulnerability database
 ]
