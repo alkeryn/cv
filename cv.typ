@@ -1,5 +1,6 @@
 #import "./lib.typ": *
 #show : template
+#set text(size: 0.98em)
 
 = #text(size: 25pt)[Pierre-Louis Braun]
 #text(size: 15pt)[Software Engineer]
@@ -53,7 +54,10 @@ Mulhouse, France\
 = Work Experience:
 
 #work("Hut8", "Senior Software Engineer", "January 2024 - Now")[
-    - Writing software to orchestrate hundred of thousands of computers in *Rust*
+    - Writing high performance software to orchestrate hundred of thousands of computers in *Rust*
+      - Including gathering data from those computers, doing thousands of requests per second
+    - Writing software to do integrity checks on databases
+    - Writing software to backfill data from one database to another (influx, bigquery)
     - Writing software to curtail computers based on power price and other factors.
     - On-call Response to emergencies.
 ]
