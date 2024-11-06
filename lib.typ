@@ -36,7 +36,9 @@
 #let cnt(w) = {
     let cnt = counter(w)
     cnt.step()
-    super(cnt.display())
+    context(
+      super(cnt.display())
+    )
 }
 
 #let nicegray = rgb("#909090")
