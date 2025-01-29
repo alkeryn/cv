@@ -35,15 +35,14 @@ Mulhouse, France\
 #set list(indent: 0.5em, marker: none)
 #set align(right)
 - Languages:
--
--
+- Technology:
 - Databases:
 - Network:
 - Web:
 - Misc:
 ][
-        - *Rust*, *Python*, *Linux*, *Bash*, *C*, *C++*, *Nix*
-        - KVM, QEMU, Proxmox, Libvirt, LXC, LXD, Docker, Kubernetes, Nix
+        - *Rust*, *Python*, *Bash*, *C*, *C++*, *Nix*
+        - *Linux*, KVM, QEMU, Proxmox, Libvirt, LXC, LXD, Docker, Kubernetes, Nix
         - PostgreSQL, MySQL, CockroachDB, ScyllaDB, Redis, SQLite, MongoDB
         - nmap, scapy, ss, ip, netcat, SSH, TCP/IP and UDP knowledge
         - Nginx, Apache, *JavaScript*, PHP, HTML5, CSS, WebAssembly
