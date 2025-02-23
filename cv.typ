@@ -42,7 +42,7 @@ Mulhouse, France\
 - Misc:
 ][
         - *Rust*, *Python*, *Bash*, *C*, *C++*, *Nix*
-        - *Linux*, KVM, QEMU, Proxmox, Libvirt, LXC, LXD, Docker, Kubernetes, Nix
+        - *Linux*, KVM, QEMU, Proxmox, Libvirt, LXC, LXD, Docker, Kubernetes, Nix, RabbitMQ
         - PostgreSQL, MySQL, CockroachDB, ScyllaDB, Redis, SQLite, MongoDB
         - nmap, scapy, ss, ip, netcat, SSH, TCP/IP and UDP knowledge
         - Nginx, Apache, *JavaScript*, PHP, HTML5, CSS, WebAssembly
