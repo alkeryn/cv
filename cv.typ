@@ -3,7 +3,7 @@
 #set text(size: 0.98em)
 
 = #text(size: 25pt)[Pierre-Louis Braun]
-#text(size: 15pt)[Software Engineer]
+#text(size: 15pt)[Senior Software Engineer]
 
 #[
 #set text(size: 0.9em)
