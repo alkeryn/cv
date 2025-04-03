@@ -52,7 +52,7 @@ Mulhouse, France\
 
 = Work Experience:
 
-#work("Hut8", "Senior Software Engineer", "January 2024 - Now")[
+#work("Hut8", "Senior Software Engineer", "January 2024 - March 2025")[
     - Writing and architecting high performance software to orchestrate hundred of thousands of miners in *Rust*
       - Including gathering and storing data from those miners, doing thousands of requests per second
     - Writing software to do integrity checks on databases
