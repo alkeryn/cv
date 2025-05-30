@@ -57,7 +57,7 @@ Mulhouse, France\
       - Including gathering and storing data from those miners, doing thousands of requests per second
     - Writing software to do integrity checks on databases
     - Writing software to backfill data from one database to another (influx, bigquery)
-    - Writing software to curtail computers based on power price and other factors.
+    - Writing software in *Python* to curtail computers based on power price and other factors.
     - On-call Response to emergencies.
 ]
 
