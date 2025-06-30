@@ -12,7 +12,7 @@ columns: 2,
 gutter: 2em
 )[
 Born on July 1998\
-Mulhouse, France\
+Les Bois, Switzerland\
 #link("mailto:plbraundev@gmail.com")\
 +33631036304
 ][
